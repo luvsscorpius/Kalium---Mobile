@@ -1,0 +1,1 @@
+Projeto do curso Técnico em Informática versão mobile do web programa Kalium utilizando a biblioteca KivyMD.
