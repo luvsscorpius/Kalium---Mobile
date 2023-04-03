@@ -1,0 +1,63 @@
+MDScreen:
+  name:'login'
+
+  MDFloatLayout:
+
+    MDTopAppBar:
+      title: "Kalium Mobile V 1.0.0"
+      elevation: 4
+      md_bg_color:"#000000"
+      pos_hint:{'center_x':0.5,'center_y':0.9}
+
+    Image:
+      source:'kalium_mob.jpg'
+      halign:'center'
+      size_hint:0.8, 0.8
+      pos_hint:{'center_x':0.5,'center_y':0.69}
+
+    MDLabel:
+      id:Label_kalium
+      text:'Kalium - Mobile'
+      halign:'center'
+      theme_text_color:'Primary'
+      pos_hint:{'center_x':0.5,'center_y':0.55}
+      font_style:'H5'
+      underline:False
+      bold: True
+
+    MDTextField: #cria input
+      id:Field_user
+      hint_text:'Usuário'
+      pos_hint:{'center_x':0.5,'center_y':0.45}
+      size_hint:None,None
+      width:300
+      helper_text: "Informe os 6 números do seu usuário"
+      helper_text_mode: "on_focus"
+      max_text_length: 6
+      mode: "rectangle"
+      bold: True
+
+    MDTextField: #cria input
+      id:Field_user
+      hint_text:'Senha'
+      pos_hint:{'center_x':0.5,'center_y':0.33}
+      size_hint:None,None
+      width:300
+      helper_text: "Informe sua senha"
+      helper_text_mode: "on_focus"
+      max_text_length: 20
+      mode: "rectangle"
+      bold: True
+      password: True
+
+    MDRaisedButton:
+      text: "Login"
+      md_bg_color: "#000000"
+      pos_hint:{'center_x':0.5,'center_y':0.21}
+      size_hint_x: 0.5
+      size_hint_y: 0.07
+
+    MDTextButton:
+      text: "Não tem login?"
+      custom_color: "white"
+      pos_hint:{'center_x':0.5,'center_y':0.15}
